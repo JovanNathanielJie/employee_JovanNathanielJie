@@ -1,7 +1,7 @@
 import 'package:firebase_database/firebase_database.dart';
 
 class EmployeeService {
-  final DatabaseReference _database = FirebaseDatabase.instance.ref().child('employee_list');
+  final DatabaseReference _database = FirebaseDatabase.instance.ref().child('employee list');
 
   Stream<Map<String, dynamic>> getEmployeeList() {
     return _database.onValue.map((event) {
